@@ -1,0 +1,360 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: sans-serif;
+}
+
+header>h3 {
+    display: none;
+}
+
+
+main,
+.articulos_nuevos li {
+    border-radius: 10px;
+}
+
+
+header nav {
+    display: none;
+}
+
+
+header {
+    width: 100vw;
+    height: 80px;
+    background-color: #464646;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.cont_logo {
+    margin-left: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #505be6;
+    color: aliceblue;
+}
+
+#boton_menu {
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+
+#boton_menu i {
+    color: aliceblue;
+}
+
+
+
+
+
+
+
+
+.nav {
+    width: 100vw;
+    height: auto;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 50px;
+}
+
+.cont_categoria {
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    background-color: #34B1DA;
+    z-index: 1;
+}
+
+.cont_barra_buscador {
+    width: 90%;
+    height: 50px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.cont_barra_buscador input {
+    grid-column: 1 / 5;
+    padding-left: 20px;
+
+    background-color: aliceblue;
+    border: none;
+}
+
+.cont_barra_buscador button {
+    grid-column: 5 / -1;
+
+    background-color: #34B1DA;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+
+
+
+
+/* MAIN */
+main {
+    width: 90%;
+    aspect-ratio: 1;
+    margin: auto;
+    background-color: #F2F2F2;
+    overflow: hidden;
+}
+
+
+
+
+.cont_main_productos {
+    width: 400%;
+    height: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.main_productos {
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+}
+
+
+.main_productos h2 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 40px;
+    color: #F2F2F2;
+}
+
+
+.main_p_1,
+.main_p_2,
+.main_p_3,
+.main_p_4 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_p_1 {
+    background-image: url(../../ICONOS\ +\ IMAGENES/main/estos-son-todos-los-usos-que-puedes-darle-a-tu-smart-tv-ademas-de-ver-contenido-multimedia.jpg);
+}
+
+.main_p_2 {
+    background-image: url(../../ICONOS\ +\ IMAGENES/main/los-10-mejores-auriculares-gaming-en-relacion-calidad-y-precio-del-2024_9c79.webp);
+}
+
+.main_p_3 {
+    background-image: url(../../ICONOS\ +\ IMAGENES/main/Auriculares-gamer-mejores-audifonos-2022.jpg);
+}
+
+.main_p_4 {
+    background-image: url(../../ICONOS\ +\ IMAGENES/main/gaming-computer-table-video-game-room-with-neon-lighting-purple-color.jpg);
+}
+
+
+
+
+
+
+/* articulos */
+.articulos_nuevos {
+    width: 90%;
+    margin: 10px auto;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.articulos_nuevos li {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #34B1DA
+}
+
+
+.articulos_nuevos li h1,
+.articulos_nuevos li a,
+.articulos_nuevos .li_descuento h2 {
+    margin: 20px;
+    color: aliceblue;
+}
+
+.free_shipping {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.arrivals {
+    position: relative;
+}
+
+.arrivals h1,
+.arrivals a {
+    z-index: 1;
+}
+
+.arrivals img {
+    position: absolute;
+    z-index: 0;
+    width: 70%;
+    right: 10px;
+    bottom: 10px;
+}
+
+
+
+
+
+.articulos_nuevos .li_descuento {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+    align-items: center;
+}
+
+
+.articulos_nuevos .li_descuento img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+
+
+
+/* animacion heardphone img */
+@keyframes rotar {
+    0% {
+        transform: rotateZ(10deg);
+    }
+
+    100% {
+        transform: rotateZ(-10deg);
+    }
+}
+
+.articulos_nuevos .li_descuento img {
+    animation: rotar 0.5s infinite alternate;
+}
+
+
+
+
+
+
+/* contenedor concurso */
+.cont_concurso {
+    width: 90%;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    background-color: #F2F2F2;
+    margin: 50px auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.cont_concurso h2 {
+    margin: auto;
+    text-align: center;
+    color: #464646;
+}
+
+.cont_concurso img {
+    width: 60%;
+    aspect-ratio: 1;
+    margin: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+footer {
+    width: 100vw;
+    height: auto;
+    background-color: #34B1DA;
+    color: #F2F2F2;
+    padding: 50px 0;
+}
+
+
+.cont_informs_footer {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+hr {
+    margin: 20px 0;
+}
+
+footer>h2 {
+    margin: 0 20px;
+}
+
+
+.information,
+.Customer_service {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.information p:hover,
+.Customer_service p:hover {
+    color: #464646;
+    cursor: pointer;
+}
+
+
+
+
+#button_to_scroll_top {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    border: none;
+    background: none;
+    font-size: 40px;
+    color: #505be6;
+    cursor: pointer;
+}

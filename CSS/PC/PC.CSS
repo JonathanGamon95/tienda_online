@@ -1,0 +1,188 @@
+@media (min-width: 1199.98px) {
+
+    header>h3 {
+        display: block;
+    }
+
+    /* body>h3 {
+        text-align:start;
+        width: 900px;
+        margin: 40px auto;
+    } */
+
+    #boton_menu {
+        display: none;
+    }
+
+
+    header {
+        width: 900px;
+        height: 50px;
+        margin: 20px auto 50px;
+
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+
+    .cont_logo {
+        padding: 10px;
+    }
+
+
+    header nav {
+        width: 400px;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 15px;
+    }
+
+    header nav p,
+    header>h3 {
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+    header nav p:hover {
+        color: #34B1DA;
+    }
+
+
+    header nav button {
+        width: 100px;
+        height: 100%;
+        background-color: #34B1DA;
+        color: aliceblue;
+        border: none;
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+
+    /* nav */
+    .nav {
+        width: 900px;
+        margin: auto;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+
+
+
+
+    .cont_barra_buscador {
+        grid-column: 2 / -1;
+
+        margin-right: 0;
+        width: 300px;
+        height: 40px;
+    }
+
+    .cont_categoria {
+        grid-column: 1 / 2;
+        grid-row: 1 / -1;
+
+        margin-left: 0;
+        height: 40px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* maid */
+    main {
+        width: 900px;
+        height: 400px;
+        aspect-ratio: none;
+        margin: 50px auto;
+    }
+
+    .articulos_nuevos {
+        width: 900px;
+        height: 200px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .articulos_nuevos li {
+        width: 100%;
+        aspect-ratio: unset;
+        background-color: #34B1DA
+    }
+
+    .free_shipping {
+        display: block;
+    }
+
+
+
+
+    .arrivals img {
+        width: 50%;
+        right: 10px;
+        bottom: 10px;
+    }
+
+
+
+
+
+
+
+
+    /* contenedor concurso */
+    .cont_concurso {
+        width: 900px;
+        height: 300px;
+        aspect-ratio: unset;
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+
+
+
+
+
+    /* footer */
+
+    footer {
+        font-size: 15px;
+    }
+
+
+    .cont_informs_footer {
+        width: 900px;
+        margin: auto;
+
+        flex-direction: unset
+    }
+
+    footer>h2 {
+        width: 900px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/MOBILES/MOBILE.CSS">
+    <link rel="stylesheet" href="./CSS/PC/PC.CSS">
+    <link rel="stylesheet" href="./CSS/PC/GALERIA_PRODUCTOS.CSS">
+    <link rel="stylesheet" href="./CSS/MOBILES/MENU_CATEGORIA.CSS">
+
+    <!-- main -->
+    <link rel="stylesheet" href="./CSS/MAIN PC-MOBILE/MAIN.CSS">
+    <title>maqueta venta</title>
+</head>
+
+<body>
+    <header>
+        <div class="cont_logo">Electromia</div>
+
+        <h3>Customer service: <i class="bi bi-telephone-fill"> 087-456-789</i></h3>
+
+        <nav>
+            <p><i class="bi bi-house-fill"></i> Home</p>
+            <p><i class="bi bi-person-fill"></i> My Account</p>
+            <p><i class="bi bi-box-arrow-in-right"></i> Log in</p>
+            <button>Me items <i class="bi bi-cart-fill"></i></button>
+        </nav>
+
+        <button id="boton_menu"><i class="bi bi-caret-down-fill"></i></button>
+    </header>
+
+    <!-- <h3>Customer service: <i class="bi bi-telephone-fill"> 087-456-789</i></h3> -->
+
+    <nav class="nav">
+        <div class="cont_barra_buscador">
+            <input type="text" placeholder="search..">
+            <button>search</button>
+        </div>
+
+        <div id="boton_categoria" class="cont_categoria">
+            <div class="titulo">
+                <h3>Categories</h3>
+                <i class="bi bi-caret-down-fill"></i>
+            </div>
+
+            <div class="cont_opcion_menu">
+                <ul class="ul_menu">
+                    <li>headphones</li>
+                    <li>TV</li>
+                    <li>pc components</li>
+                    <li>notebooks</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+    <main>
+        <div class="cont_main_productos">
+            <div class="main_productos main_p_1">
+                <h2>Enjoy your programs in high definition</h2>
+            </div>
+
+            <div class="main_productos main_p_2">
+                <h2>Unlimited fun</h2>
+            </div>
+
+            <div class="main_productos main_p_3">
+                <h2>The best PC products</h2>
+            </div>
+            <div class="main_productos main_p_4">
+                <h2>the best surround sound</h2>
+            </div>
+        </div>
+    </main>
+
+    <ul class="articulos_nuevos">
+        <li class="arrivals">
+            <h1><span style="color: #464646;">new</span> arrivals</h1>
+            <a href="">shop now</a>
+            <img src="./ICONOS + IMAGENES/345fdfgdfg.png" alt="">
+        </li>
+
+        <li class="free_shipping">
+            <h1><span style="color: #464646;">free shipping</span> and refund guarantee !</h1>
+        </li>
+
+        <li class="li_descuento">
+            <h2><span style="color: gold;">20% off</span> headphone</h2>
+            <img src="./ICONOS + IMAGENES/headphone.png" alt="descuento">
+        </li>
+    </ul>
+
+
+
+    <div class="cont_btn_gallery">
+        <button class="scroll-btn left-btn" onclick="scrollGallery(-1)">&#10094;</button>
+        <button class="scroll-btn right-btn" onclick="scrollGallery(1)">&#10095;</button>
+    </div>
+
+    <div class="gallery-container">
+        <!-- <button class="scroll-btn left-btn" onclick="scrollGallery(-1)">&#10094;</button> -->
+
+        <div class="gallery">
+            <div class="cont_producto">
+                <h1>20:00$</h1>
+                <p>ng-a100bt-pl-angulo</p>
+                <div class="cont_img"><img
+                        src="./ICONOS + IMAGENES/productos/ng-a100bt-pl-angulo1-8d30f7d17ecc9b8c8e16518679401776-1024-1024.jpg"
+                        alt="producto"></div>
+            </div>
+
+            <div class="cont_producto">
+                <h1>35:00$</h1>
+                <p>wireless headset Shokz OpenFit - Negro</p>
+                <div class="cont_img"><img
+                        src="./ICONOS + IMAGENES/productos/uriculares Inalámbricos Shokz OpenFit - Negro.jpg"
+                        alt="producto"></div>
+            </div>
+
+            <div class="cont_producto">
+                <h1>24:00$</h1>
+                <p>TERPORT Ergonomic USB Wireless Mouse with Thumb Rest</p>
+                <div class="cont_img"><img
+                        src="./ICONOS + IMAGENES/productos/TERPORT Mouse Inalámbrico Ergonómico USB Con Reposapulgar.webp"
+                        alt="producto"></div>
+            </div>
+
+            <div class="cont_producto">
+                <h1>80:00$</h1>
+                <p>Mechanical Keyboard Gamer Redragon Fizz Pro RGB</p>
+                <div class="cont_img"><img
+                        src="./ICONOS + IMAGENES/productos/Teclado-Mecanico-Gamer-Redragon-Fizz-Pro-RGB-Switch-Brown-Preto-K616-Rgb-B_1731669564_g.webp"
+                        alt="producto"></div>
+            </div>
+
+            <div class="cont_producto">
+                <h1>64:00$</h1>
+                <p>Airpods deals i9s</p>
+                <div class="cont_img"><img src="./ICONOS + IMAGENES/productos/Airpods deals i9s.webp" alt="producto">
+                </div>
+            </div>
+
+            <div class="cont_producto">
+                <h1>240.00$</h1>
+                <p>headphones Presonus HD7</p>
+                <div class="cont_img"><img src="./ICONOS + IMAGENES/productos/HD7-1-1.jpg" alt="producto"></div>
+            </div>
+        </div>
+
+        <!-- <button class="scroll-btn right-btn" onclick="scrollGallery(1)">&#10095;</button> -->
+    </div>
+
+
+
+
+
+
+    <div class="cont_concurso">
+        <h2>Participate in one of our contests and <span style="color: #34B1DA;">win an iPhone!</span></h2>
+
+        <img src="./ICONOS + IMAGENES/apple_iphone-12_mag-safe_10132020_inline.gif.large.gif" alt="iphone_imagen">
+    </div>
+
+
+
+
+    <footer>
+        <div class="cont_informs_footer">
+            <div class="information">
+                <h2>Informations</h2>
+                <p>About Us</p>
+                <p>Delivery information</p>
+                <p>Privacy Policy</p>
+                <p>Tems & Conditions</p>
+            </div>
+
+            <div class="Customer_service">
+                <h2>Customer Service</h2>
+                <p>Contact Us</p>
+                <p>Returns</p>
+                <p>Site Map</p>
+                <p>Blog</p>
+            </div>
+        </div>
+
+
+        <hr>
+
+        <h2>Electromia © 2024. Developed by Jonathan Gamon</h2>
+    </footer>
+
+
+
+
+    <button id="button_to_scroll_top""><i class="bi bi-arrow-up-square-fill"></i></button>
+
+
+
+
+    <script src="./CSS/PC/GALERIA_PRODUCTOS.JS"></script>
+    <script src="./CSS/PC/BOTON_SCROLL_TOP.JS"></script>
+</body>
+
+</html>
